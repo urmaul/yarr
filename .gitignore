@@ -1,0 +1,15 @@
+# Yii temporary and generated files
+/assets/*
+!/assets/empty
+/protected/runtime/*
+!/protected/runtime/empty
+# Local config file
+/protected/config/main-local.php
+# Svn files
+.svn
+# Windows folder metadata
+desktop.ini
+# OpenOffice.org lock files
+.~lock.*
+# NetBeans Project private files
+/nbproject/private/
