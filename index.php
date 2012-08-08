@@ -5,7 +5,8 @@ $yii=dirname(__FILE__).'/framework/yii.php';
 $config=dirname(__FILE__).'/protected/config/main.php';
 
 // Debug is on when remote address is localhost
-defined('YII_DEBUG') or define('YII_DEBUG', $_SERVER['REMOTE_ADDR'] === '127.0.0.1');
+defined('YII_DEBUG') or $_SERVER['REMOTE_ADDR'] === '127.0.0.1' and define('YII_DEBUG', true);
+defined('YII_DEBUG') or define('YII_DEBUG', false);
 ini_set('display_errors',         YII_DEBUG ? 1 : 0);
 ini_set('display_startup_errors', YII_DEBUG ? 1 : 0);
 error_reporting(YII_DEBUG ? E_ALL : 0);
