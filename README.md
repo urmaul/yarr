@@ -8,3 +8,4 @@ TODO
 
 * Update Yii
 * Add WebUser class with getModel method dummy
+* Add Controller loadModel method
