@@ -5,7 +5,7 @@
 
 // This is the main Web application configuration. Any writable
 // CWebApplication properties can be configured here.
-return array(
+$config = array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'My Web Application',
 
@@ -62,3 +62,8 @@ return array(
 		'adminEmail'=>'webmaster@example.com',
 	),
 );
+
+// Apply local config modifications
+@include dirname(__FILE__) . '/main-local.php';
+
+return $config;
