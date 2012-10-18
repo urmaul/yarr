@@ -7,6 +7,7 @@
  * CWebApplication modules:
  * @property CClientScript $clientScript
  * @property CWebUser $user
+ * @property CHttpSession $session
  */
 class CApplication
 {}
