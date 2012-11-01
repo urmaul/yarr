@@ -11,4 +11,6 @@ return array(
 		'db' => $mainConfig['components']['db'],
 		'authManager' => $mainConfig['components']['authManager'],
 	),
+    
+    'params' => $mainConfig['params'],
 );
