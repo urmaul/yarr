@@ -12,5 +12,12 @@ return array(
 		'authManager' => $mainConfig['components']['authManager'],
 	),
     
-    'params' => $mainConfig['params'],
+    'commandMap' => array(
+        'migrate' => array(
+            'class' => 'system.cli.commands.MigrateCommand',
+            'templateFile' => 'application.migrations.template',
+        ),
+    ),
+    
+	'params' => $mainConfig['params'],
 );
