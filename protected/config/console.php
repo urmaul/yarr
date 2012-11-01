@@ -7,8 +7,8 @@ return array(
 	'name'     => $mainConfig['name'],
 	'import'   => $mainConfig['import'],
 
-	'components'=>array(
-		'db' => $mainConfig['components']['db'],
+	'components' => array(
+		'db'          => $mainConfig['components']['db'],
 		'authManager' => $mainConfig['components']['authManager'],
 	),
     
