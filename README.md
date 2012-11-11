@@ -1,7 +1,9 @@
 yii-cleanapp
 ============
 
-Clean Yii application template
+Clean Yii application template.
+
+**Yii Framework version:** 1.1.12
 
 Features
 --------
@@ -23,7 +25,6 @@ Preinstalled extensions
 TODO
 ----
 
-* Update Yii
 * Regenerate application
 * Add WebUser class with getModel method dummy
 * Add Controller loadModel method
