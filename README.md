@@ -1,12 +1,10 @@
-Yii Cleanapp
-============
+# Yii Cleanapp
 
 Clean Yii application template.
 
 **Yii Framework version:** 1.1.12
 
-Features
---------
+## Features
 
 * Local config
 * Custom migration template
@@ -17,13 +15,11 @@ Features
 * Fake CApplication class with phpdoc for Netbeans autocomplete
 * Init shell script to fix file permissions
 
-Preinstalled extensions
------------------------
+## Preinstalled extensions
 
 * Yii debug toolbar
 
-TODO
-----
+## TODO
 
 * Add WebUser class with getModel method dummy
 * Add Controller loadModel method
