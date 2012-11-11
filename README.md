@@ -1,4 +1,4 @@
-yii-cleanapp
+Yii Cleanapp
 ============
 
 Clean Yii application template.
@@ -25,7 +25,6 @@ Preinstalled extensions
 TODO
 ----
 
-* Regenerate application
 * Add WebUser class with getModel method dummy
 * Add Controller loadModel method
 * Add phpass extension
