@@ -28,7 +28,8 @@ $config = array(
 			'allowAutoLogin'=>true,
 		),
 		'urlManager'=>array(
-			'urlFormat'=>'path',
+			'showScriptName' => false,
+			'urlFormat' => 'path',
 			'rules'=>array(
 				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
 				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
