@@ -17,7 +17,7 @@ Clean Yii application template.
 
 ## Preinstalled extensions
 
-* Yii debug toolbar
+* [yiidebugtb](http://www.yiiframework.com/extension/yiidebugtb/)
 
 ## TODO
 
