@@ -6,7 +6,7 @@ Clean Yii application template.
 
 ## Features
 
-* Local config
+* Local config ignored by git
 * Custom migration template
 * Console config is based on main config
 * .htaccess and .gitignore are set up
