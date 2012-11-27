@@ -5,7 +5,7 @@ defined('YII_DEBUG') or $_SERVER['REMOTE_ADDR'] === '127.0.0.1' and define('YII_
 defined('YII_DEBUG') or define('YII_DEBUG', false);
 ini_set('display_errors',         YII_DEBUG ? 1 : 0);
 ini_set('display_startup_errors', YII_DEBUG ? 1 : 0);
-error_reporting(YII_DEBUG ? E_ALL : 0);
+error_reporting(YII_DEBUG ? -1 : 0);
 
 // change the following paths if necessary
 $yii    = dirname(__FILE__) . '/framework/' . (YII_DEBUG ? 'yii.php' : 'yiilite.php');
