@@ -9,6 +9,7 @@
 .svn
 # Windows folder metadata
 desktop.ini
+Thumbs.db
 # OpenOffice.org lock files
 .~lock.*
 # NetBeans Project private files
