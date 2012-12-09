@@ -19,10 +19,3 @@ Clean Yii application template.
 ## Preinstalled extensions
 
 * [yiidebugtb](http://www.yiiframework.com/extension/yiidebugtb/)
-
-## TODO
-
-* Add WebUser class with getModel method dummy
-* Add Controller loadModel method
-* Add phpass extension
-* Create admin module template
