@@ -6,15 +6,16 @@ Clean Yii application template.
 
 ## Features
 
-* Local config ignored by git
-* Custom migration template
-* Console config is based on main config
-* .htaccess and .gitignore are set up
-* YII_DEBUG is enabled when client is localhost
+* Preconfigured .htaccess and .gitignore files
+* Git ignored file main-local.php to store private application config
+* Custom migration template with variable to copy/paste SQL query
+* Console config uses main config to avoid code duplication
+* Preconfigured frendly urls
+* YII_DEBUG is enabled when client IP is 127.0.0.1
 * Full/Zero error reporting depending on YII_DEBUG
-* Fake CApplication class with phpdoc for Netbeans autocomplete
-* Init shell script to fix file permissions
-* DB schema caching enabled with cache flushing after "migrate" command
+* Fake CApplication class with phpdoc comments describing components for editor autocomplete function
+* protected/init.sh script that fixes file permissions
+* DB schema caching enabled with cache flushing after "migrate" command ([description in Russian](http://codesex.org/component/content/article/4-php-scripts/50-yii-framework-schema-cache))
 
 ## Preinstalled extensions
 
