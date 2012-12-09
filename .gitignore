@@ -1,8 +1,8 @@
 # Yii temporary and generated files
 /assets/*
-!/assets/empty
+!/assets/.gitkeep
 /protected/runtime/*
-!/protected/runtime/empty
+!/protected/runtime/.gitkeep
 !/protected/runtime/cache
 /protected/runtime/cache/*
 !/protected/runtime/cache/.gitkeep
