@@ -14,6 +14,7 @@ Clean Yii application template.
 * Full/Zero error reporting depending on YII_DEBUG
 * Fake CApplication class with phpdoc for Netbeans autocomplete
 * Init shell script to fix file permissions
+* DB schema caching enabled with cache flushing after "migrate" command
 
 ## Preinstalled extensions
 
