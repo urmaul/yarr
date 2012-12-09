@@ -43,6 +43,7 @@ $config = array(
 			'username' => 'root',
 			'password' => '',
 			'charset' => 'utf8',
+			'schemaCachingDuration' => YII_DEBUG ? 86400 : 0,
 		),
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors

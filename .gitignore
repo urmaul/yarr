@@ -3,6 +3,9 @@
 !/assets/empty
 /protected/runtime/*
 !/protected/runtime/empty
+!/protected/runtime/cache
+/protected/runtime/cache/*
+!/protected/runtime/cache/.gitkeep
 # Local config file
 /protected/config/main-local.php
 # Svn files
@@ -13,4 +16,4 @@ Thumbs.db
 # OpenOffice.org lock files
 .~lock.*
 # NetBeans Project private files
-/nbproject/private/
+/nbproject/private/*
