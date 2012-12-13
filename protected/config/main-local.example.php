@@ -9,7 +9,7 @@
 
 $group = &$config['components']['db'];
 $group = array_merge($group, array(
-	'connectionString' => 'mysql:host=localhost;dbname=mydbname',
+	'connectionString' => 'mysql:host=localhost;dbname=yarr',
 	'username' => 'username',
 	'password' => 'password',
 ));

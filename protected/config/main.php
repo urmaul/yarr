@@ -1,13 +1,8 @@
 <?php
 
-// uncomment the following to define a path alias
-// Yii::setPathOfAlias('local','path/to/local-folder');
-
-// This is the main Web application configuration. Any writable
-// CWebApplication properties can be configured here.
 $config = array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'My Web Application',
+	'name' => 'Yarr',
 
 	// preloading 'log' component
 	'preload'=>array('log'),
@@ -39,11 +34,12 @@ $config = array(
 			),
 		),
 		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=cleanapp',
+			'connectionString' => 'mysql:host=localhost;dbname=yarr',
 			'emulatePrepare' => true,
 			'username' => 'root',
 			'password' => '',
 			'charset' => 'utf8',
+            'tablePrefix' => '',
 			'schemaCachingDuration' => YII_DEBUG ? 86400 : 0,
 		),
 		'errorHandler'=>array(
