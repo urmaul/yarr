@@ -16,7 +16,9 @@ class ChMigrateCommand extends MigrateCommand
         $db = $this->getDbConnection();
  
         if ($db->schemaCachingDuration > 0) {
-            Yii::app()->getComponent($db->schemaCacheID)->flush();
+            $cacher = Yii::app()->getComponent($db->schemaCacheID);
+            if ($cacher)
+                $cacher->flush();
         }
     }
 }
