@@ -19,6 +19,7 @@ $config = array(
 	),
 
 	'modules'=>array(
+        'admin',
 	),
 
 	// application components
