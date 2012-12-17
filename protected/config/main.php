@@ -11,10 +11,11 @@ $config = array(
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
+		'application.components.controllers.*',
 	),
 
 	'modules'=>array(
-        'admin',
+        'node',
 	),
 
 	// application components
@@ -28,6 +29,9 @@ $config = array(
 			'urlFormat' => 'path',
 			'rules'=>array(
 				'' => 'site/index',
+                
+                'node/<slug>'=>'node/frontend/index',
+                
 				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
 				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
@@ -42,6 +46,12 @@ $config = array(
             'tablePrefix' => '',
 			'schemaCachingDuration' => YII_DEBUG ? 86400 : 0,
 		),
+        
+        'viewRenderer' => array(
+            'class' => 'ext.twig-renderer.ETwigViewRenderer',
+            'fileExtension' => '.twig',
+        ),
+        
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
 			'errorAction'=>'site/error',
