@@ -32,6 +32,8 @@ $config = array(
                 
                 'node/<slug>'=>'node/frontend/index',
                 
+                'admin/node/<action>'=>'node/backend/<action>',
+                
 				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
 				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
