@@ -2,6 +2,8 @@
 
 class BackendController extends YBackendController
 {
+    const MODEL = 'Node';
+
 	/**
 	 * @return array action filters
 	 */
@@ -112,20 +114,9 @@ class BackendController extends YBackendController
 	}
 
 	/**
-	 * Lists all models.
-	 */
-	public function actionIndex()
-	{
-		$dataProvider=new CActiveDataProvider('Node');
-		$this->render('index',array(
-			'dataProvider'=>$dataProvider,
-		));
-	}
-
-	/**
 	 * Manages all models.
 	 */
-	public function actionAdmin()
+	public function actionIndex()
 	{
 		$model=new Node('search');
 		$model->unsetAttributes();  // clear any default values
