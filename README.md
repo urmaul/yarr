@@ -16,6 +16,7 @@ Clean Yii application template.
 * Fake CApplication class with phpdoc comments describing components for editor autocomplete function
 * protected/init.sh script that fixes file permissions
 * DB schema caching enabled with cache flushing after "migrate" command ([description in Russian](http://codesex.org/component/content/article/4-php-scripts/50-yii-framework-schema-cache))
+* ClientScript package "jquery" is connected to public CDN's ([Google](https://developers.google.com/speed/libraries/devguide), [Yandex](http://api.yandex.ru/jslibs/), [Media Temple](http://code.jquery.com/))
 
 ## Preinstalled extensions
 

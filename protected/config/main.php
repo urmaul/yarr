@@ -46,6 +46,22 @@ $config = array(
 			'charset' => 'utf8',
 			'schemaCachingDuration' => YII_DEBUG ? 86400 : 0,
 		),
+		'clientScript'=>array(
+			'packages' => array(
+				/*'jquery' => array( // Google CDN
+					'baseUrl' => 'http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/',
+					'js' => array(YII_DEBUG ? 'jquery.js' : 'jquery.min.js'),
+				),*/
+				/*'jquery' => array( // Yandex CDN
+					'baseUrl' => 'http://yandex.st/jquery/1.7.2/',
+					'js' => array(YII_DEBUG ? 'jquery.js' : 'jquery.min.js'),
+				),*/
+				'jquery' => array( // jQuery CDN - provided by (mt) Media Temple
+					'baseUrl' => 'http://code.jquery.com/',
+					'js' => array(YII_DEBUG ? 'jquery-1.7.2.js' : 'jquery-1.7.2.min.js'),
+				),
+			),
+		),
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
 			'errorAction'=>'site/error',
