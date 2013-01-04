@@ -1,4 +1,1 @@
-yarr
-====
-
-Yarr CMS
+# Yarr CMS

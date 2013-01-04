@@ -6,20 +6,22 @@ IndexIgnore */*
 # Make sure that only index.php is called
 DirectoryIndex index.php
 
-RewriteEngine on
+<IfModule mod_rewrite.c>
+    RewriteEngine on
 
-# if a directory or a file exists, use it directly
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
+    # if a directory or a file exists, use it directly
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
 
-# otherwise forward it to index.php
-RewriteRule . index.php [L]
+    # otherwise forward it to index.php
+    RewriteRule . index.php [L]
 
 
-# Forward dangerous paths to index.php
-RewriteCond %{REQUEST_FILENAME} (.*/)?\.svn/ [OR]
-RewriteCond %{REQUEST_FILENAME} \.git/ [OR]
-RewriteCond %{REQUEST_FILENAME} \.gitignore$ [OR]
-RewriteCond %{REQUEST_FILENAME} protected/ [OR]
-RewriteCond %{REQUEST_FILENAME} framework/
-RewriteRule . index.php [L]
+    # Forward dangerous paths to index.php
+    RewriteCond %{REQUEST_FILENAME} (.*/)?\.svn/ [OR]
+    RewriteCond %{REQUEST_FILENAME} \.git/ [OR]
+    RewriteCond %{REQUEST_FILENAME} \.gitignore$ [OR]
+    RewriteCond %{REQUEST_FILENAME} protected/ [OR]
+    RewriteCond %{REQUEST_FILENAME} framework/
+    RewriteRule . index.php [L]
+</IfModule>
